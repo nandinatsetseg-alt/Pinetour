@@ -189,6 +189,7 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     box-shadow: 8px 8px 0px rgba(41, 114, 139, 0.25), -8px -8px 0px rgba(31, 114, 170, 0.46);
     text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
 }
+
 .destination {
     background-image: url(./Roadmap\ image.png);
     width: 1440px;
@@ -196,16 +197,43 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-.ug {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 59px;
     justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ug {
+    width: 1440px;
+    height: 85px;
+    position: absolute;
+    top: 120px;
+    left: -1px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .tom {
     width: 1442px;
     height: 51px;
+    font-size: 42px;
+    line-height: 100%;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.pack {
+    width: 1442px;
+    height: 24px;
+    color: #18181BB2;
+    font-size: 20px;
+    line-height: 100%;
     font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
@@ -217,6 +245,10 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     height: 640px;
     display: flex;
     gap: 40px;
+    flex-direction: row;
+    position: relative;
+    top: 0px;
+    justify-content: center;
 }
 .days {
     width: 513px;
@@ -225,20 +257,214 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 .neg {
     width: 513px;
     height: 112px;
     border-radius: 120px;
     background-color: #EEE9D9;
+    display: flex;
+    flex-direction: row;
+    gap: 184px;
+    align-items: center;
+    justify-content: center;
 }
 .bair {
    width: 217px;
-   height: 29px;
+   height: 48px;
    display: flex;
+   flex-direction: column;
+   gap: 4px;
 }
 .dood {
     width: 94px;
     height: 15px;
     display: flex;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.point {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+.udruud {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #F7F6F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bair2 {
+    width: 316px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.hoyrr {
+    width: 513px;
+    height: 112px;
+    border-radius: 120px;
+    background-color: #8BB8C1CC;
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+    align-items: center;
+    justify-content: center;
+}
+.bair3 {
+    width: 169px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.gurav {
+    width: 513px;
+    height: 112px;
+    border-radius: 120px;
+    background-color: #AAD8D7CC;
+    display: flex;
+    flex-direction: row;
+    gap: 232px;
+    align-items: center;
+    justify-content: center;
+}
+.duruv {
+    width: 513px;
+    height: 112px;
+    border-radius: 120px;
+    background-color: #8BC0BDCC;
+    display: flex;
+    flex-direction: row;
+    gap: 158px;
+    align-items: center;
+    justify-content: center;
+}
+.bair4 {
+    width: 248px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.tav {
+    width: 513px;
+    height: 112px;
+    border-radius: 120px;
+    background-color: #97CCE0CC;
+    display: flex;
+    flex-direction: row;
+    gap: 241px;
+    align-items: center;
+    justify-content: center;
+}
+.bair5 {
+    width: 160px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.jijken {
+    width: 647px;
+    height: 640px;
+    border-radius: 30px;
+    flex-shrink: 0;
+    position: relative;
+}
+.nern {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+}   
+.p {
+    font-family: "Montserrat", sans-serif;
+    width: 68px;
+    height: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+}
+.sukhee {
+    width: 245.34106990927424px;
+    height: 245px;
+    position: absolute; z-index: 1;
+    top: 65px;
+    left: 359px;
+    motion-rotation: 5 deg;
+}
+.gandan {
+    width: 245.34106990927424px;
+    height: 245px;
+    position: absolute; z-index: 2;
+    top: -0px;
+    left: 146px;
+    motion-rotation: 5 deg;
+}
+.togoo {
+    width: 245.34106990927424px;
+    height: 245px;
+    position: absolute; z-index: 3;
+    top: 76px;
+    left: 30px;
+    motion-rotation: 5 deg;
+}
+.tsagaan {
+    width: 245.34106990927424px;
+    height: 245px;
+    position: absolute; z-index: 2;
+    top: -84px;
+    left: -21px;
+    motion-rotation: 5 deg;
+}
+.khuvs {
+    width: 245.34106990927424px;
+    height: 245px;
+    position: absolute; z-index: 2;
+    top: -80px;
+    left: 146px;
+    motion-rotation: 5 deg;
+}
+.footer {
+    background-image: url(./Price&Footer\ image.png);
+    width: 1440px;
+    height: 1120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}   
+.pricing {
+    width: 1440px;
+    height: 85px;
+    position: absolute;
+    top: 40px;
+    gap: 10px;
+}
+.yms {
+    width: 1200px;
+    height: 527px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.negdh {
+    width: 384px;
+    height: 527px;
+    border-radius: 40px;
+    background-color: #FAFBFC;
 }
