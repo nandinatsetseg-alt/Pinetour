@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .nuur {
@@ -19,6 +20,7 @@ display: flex;
 align-items: center;
 flex-direction: row;
 justify-content: space-between;
+
 
 }
 .en {
@@ -39,14 +41,12 @@ align-items: center;
 .hero-image {
     width: 100px;
     height: 34px;
-    padding: 2cm;
 }
 .text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
 }
 .magic {
     width: 618px;
@@ -126,7 +126,38 @@ justify-content: center;
 text-align: center;
 border-radius: 40px;
 box-shadow: 8px 8px 0px rgba(41, 114, 139, 0.25), -8px -8px 0px rgba(31, 114, 170, 0.46);
-text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
+text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65);
+position: relative;
+}
+.har {
+    background-color: black;
+    width: 276px;
+    height: 370px;
+    display: flex;
+    border-radius: 40px;
+    opacity: 0;
+    position: relative;
+    z-index: -19;
+    
+}
+.baijii {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 276px;
+    height: 370px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.terkh:hover .har{
+   opacity: 0.38;
+   position: absolute;
+   z-index: 5;
+   transition: opacity 0.5s;
 }
 
 .amar {
@@ -147,7 +178,14 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     text-align: center;
     border-radius: 40px;
     box-shadow: 8px 8px 0px rgba(41, 114, 139, 0.25), -8px -8px 0px rgba(31, 114, 170, 0.46);
-    text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
+    text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65);
+    position: relative;
+}
+.amar:hover .har{
+    opacity: 0.38;
+   position: absolute;
+   z-index: 5;
+   transition: opacity 0.5s;
 }
 .khuvsgul {
     background-image: url(./3.png);
@@ -167,7 +205,14 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     text-align: center;
     border-radius: 40px;
     box-shadow: 8px 8px 0px rgba(41, 114, 139, 0.25), -8px -8px 0px rgba(31, 114, 170, 0.46);
-    text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
+    text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65);
+    position: relative;
+}
+.khuvsgul:hover .har{
+    opacity: 0.38;
+    position: absolute;
+    z-index: 5;
+    transition: opacity 0.5s;
 }
 .khorgo {
     background-image: url(./4.png);
@@ -187,9 +232,15 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     text-align: center;
     border-radius: 40px;
     box-shadow: 8px 8px 0px rgba(41, 114, 139, 0.25), -8px -8px 0px rgba(31, 114, 170, 0.46);
-    text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
+    text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65);
+    position: relative;
 }
-
+.khorgo:hover .har{
+    opacity: 0.38;
+    position: absolute;
+    z-index: 5;
+    transition: opacity 0.5s;
+}
 .destination {
     background-image: url(./Roadmap\ image.png);
     width: 1440px;
@@ -246,8 +297,9 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     display: flex;
     gap: 40px;
     flex-direction: row;
-    position: relative;
-    top: 0px;
+    position: absolute;
+    top: 264px;
+    left: 120px;
     justify-content: center;
 }
 .days {
@@ -400,6 +452,7 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     top: 65px;
     left: 359px;
     motion-rotation: 5 deg;
+    opacity: 0;
 }
 .gandan {
     width: 245.34106990927424px;
@@ -408,6 +461,7 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     top: -0px;
     left: 146px;
     motion-rotation: 5 deg;
+    opacity: 0;
 }
 .togoo {
     width: 245.34106990927424px;
@@ -416,6 +470,7 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     top: 76px;
     left: 30px;
     motion-rotation: 5 deg;
+    opacity: 0;
 }
 .tsagaan {
     width: 245.34106990927424px;
@@ -424,6 +479,7 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     top: -84px;
     left: -21px;
     motion-rotation: 5 deg;
+    opacity: 0;
 }
 .khuvs {
     width: 245.34106990927424px;
@@ -432,6 +488,7 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     top: -80px;
     left: 146px;
     motion-rotation: 5 deg;
+    opacity: 0;
 }
 .footer {
     background-image: url(./Price&Footer\ image.png);
@@ -451,7 +508,7 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     height: 85px;
     position: absolute;
     top: 40px;
-    gap: 10px;
+    gap: 25px;
 }
 .yms {
     width: 1200px;
@@ -461,10 +518,305 @@ text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65)
     justify-content: center;
     align-items: center;
     gap: 24px;
+    position: absolute;
+    top: 208px;
+    left: 119px;
 }
 .negdh {
     width: 384px;
     height: 527px;
     border-radius: 40px;
     background-color: #FAFBFC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.negdh:hover {
+    box-shadow: 8px 8px 2px #303030;
+}
+.deedtal {
+    width: 384px;
+    height: 92px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+.zurh {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 32px;
+    left: 24px;
+}
+.budget {
+    width: 158px;
+    height: 22px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: absolute;
+    top: 39px;
+    left: 76px;
+}
+.neg:hover {
+    border: 4px solid white;
+}
+.hoyrr:hover {
+    border: 4px solid white;
+}
+.gurav:hover {
+    border: 4px solid white;
+}
+.duruv:hover {
+    border: 4px solid white;
+}
+.tav:hover {
+    border: 4px solid white;
+}
+.buun:has(.neg:hover) .sukhee{
+    opacity: 1;
+    transition: opacity 0.5s;
+    border: 4px;
+    border-color: #FFFFFF;
+}
+.buun:has(.hoyrr:hover) .gandan{
+    opacity: 1;
+    transition: opacity 0.5s;
+    border: 4px;
+    border-color: #FFFFFF;
+}
+.buun:has(.gurav:hover) .togoo{
+    opacity: 1;
+    transition: opacity 0.5s;
+    border: 4px;
+    border-color: #FFFFFF;
+}
+.buun:has(.duruv:hover) .tsagaan{
+    opacity: 1;
+    transition: opacity 0.5s;
+    border: 4px;
+    border-color: #FFFFFF;
+}
+.buun:has(.tav:hover) .khuvs{
+    opacity: 1;
+    transition: opacity 0.5s;
+    border: 4px;
+    border-color: #FFFFFF;
+}
+
+.doodtal {
+    width: 384px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+}
+.unebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+.dollar {
+    width: 336px;
+    height: 78px;
+    gap: 10px;
+}
+.too {
+    width: 336px;
+    height: 49px;
+    color: #919191;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+
+}
+.ess {
+    color: #919191;
+    width: 336px;
+    height: 19px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.include {
+    width: 336px;
+    height: 180px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    width: 256px;
+    height: 22px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+}
+.item1 {
+    width: 336px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+}
+.item2 {
+    width: 336px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+}
+.check {
+    width: 20px;
+    height: 20px;
+}
+.select {
+    width: 336px;
+    height: 48px;
+    background-color: #A4D1E2;
+    border-radius: 50px;
+    font-family: "Inter", sans-serif;
+    border: #A4D1E2;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.select:hover {
+    border: 3px solid black;
+}
+.too2 {
+    width: 336px;
+    height: 49px;
+    color: #303030;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+.pop {
+    width: 336px;
+    height: 27px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.popular {
+    width: 91px;
+    height: 27px;
+    background-color: #6972B5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FAFBFC;
+    border-radius: 40px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+}
+.hoyrdh {
+    width: 384px;
+    height: 527px;
+    border-radius: 40px;
+    background-color: #FAFBFC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hoyrdh:hover {
+    box-shadow: 8px 8px 1px #303030;
+}
+.gurvdh {
+    width: 384px;
+    height: 527px;
+    border-radius: 40px;
+    background-color: #FAFBFC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gurvdh:hover {
+    box-shadow: 8px 8px 1px #303030;
+}
+.footers {
+    width: 1440px;
+    height: 204px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 916px;
+    left: 1px;
+}
+.foothead {
+    width: 1200px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logonuud {
+    width: 358px;
+    height: 44px;
+    gap: 20px;
+    display: flex;
+
+}
+.fb {
+    width: 167px;
+    height: 44px;
+    background-color: #FAFBFC;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.fblogo {
+    width: 24px;
+    height: 24px;
+}
+.facebook {
+    color: #6972B5;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.ig {
+    width: 171px;
+    height: 44px;
+    background-color: #FAFBFC;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.iglogo {
+    width: 24px;
+    height: 24px;
+}
+.instagram {
+    color: #6972B5;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
